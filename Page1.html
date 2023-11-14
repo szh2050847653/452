@@ -1,53 +1,196 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        @import url("ss.css");
-        @font-face
-{
-	font-family: myFirstFont;
-	src: url(sansation_bold.woff);
-	font-weight:bold;
+<!DOCTYPE html> 
+ <html lang="en"> 
+ <head> 
+ <title>CSS Website Layout</title> 
+ <meta charset="utf-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ <style> 
+ body { 
+ background-color: #fc9; /* same as #ffcc99 */ 
+ } 
+   * { 
+ box-sizing: border-box; 
+ } 
+ 
+  body { 
+ margin: 0; 
+ } 
+ 
+  /* Style the header */ 
+ .header { 
+ background-color: rgb(255, 230, 0); 
+ padding: 20px; 
+ text-align: center; 
+ } 
+ 
+  /* Style the top navigation bar */ 
+ .topnav { 
+ overflow: hidden; 
+ background-color: #cbbc17; 
+   } 
+ 
+  /* Style the topnav links */ 
+ .topnav a { 
+ float: center; 
+ display: block; 
+ color: #edc7c7; 
+ text-align: center; 
+ padding: 14px 16px; 
+ text-decoration: none; 
+ } 
+ 
+  /* Change color on hover */ 
+ .topnav a:hover { 
+ background-color: #dfe092; 
+ color: rgb(22, 1, 72); 
+ } 
+ 
+ </style> 
+ <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111;
+    }
+    </style>
   
+   <style> 
+   h1 {text-align: center;} 
+   img { 
+   display: block; 
+   margin-left: auto; 
+   margin-right: auto; 
+   } 
+   h2 {text-align: center;} 
+   img { 
+   display: block; 
+   margin-left: auto; 
+   margin-right: auto; 
+   } 
+   .nav {
+          display: flex;
+          justify-content: space-around;
+          background-color: #333;
+      }
   
-}
-
-div
-{
-	font-family:myFirstFont;
-}
-p.es{color:rgb(0,0,255)}  
-        </style>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+      .nav a {
+          color: white;
+          padding: 14px 20px;
+          text-decoration: none;
+          text-align: center;
+      }
+  
+      .nav a:hover {
+          background-color: #ddd;
+          color: black;
+      }
+  
+      .main {
+          padding: 20px;
+      }
+  
+      .footer {
+          background-color: #f1f1f1;
+          padding: 10px;
+          text-align: center;
+      }
+      img {
+  
+      
+  
+    
+  }
+  table
+ 
+ { 
+  
+ margin-right: auto;
+  
+ margin-left: auto;
+  
+ }
+  </style>
+ </head> 
+ <body> 
+ 
     <div class="header">
-        <h1 align="center">self introduction
-        </h1>
-      </div>
-	 <nav>
-              <ul align="center">
-                <li>Self Introduction </li>
-                <li></li>
-                <li></li>
-              </ul>
-          </nav>
+        <h1 style=text-align:center style="color:rgb(24, 20, 160);">Self Introduction</h1>
       <div style="text-align:center;">
         
         
-    < img border="0" src="https://user-images.githubusercontent.com/127078714/228042848-65180367-30df-4688-9ac1-f1abfecd5c7f.jpg" alt="Pulpit rock"text-align: center width="304" height="420" >
+    <img src="https://i.postimg.cc/02XN6ys5/5009a57315bd61dafd05846f435a091.jpg" >
       </div>
+    <nav>
+              <ul>
+                <li><a  href="https://ksfw666.github.io/452/page1.html ">Self Introduction </a></li>
+                <li><a href="https://ksfw666.github.io/452/page2.html">Sample Websites</a></li>
+                <li><a href="https://ksfw666.github.io/452/page3.html">Storyboard</a></li>
+              </ul>
+          </nav>
+      
       <div class="row">
         <div class="column">
-          <h2 align="center">Interest</h2>
-          <p class="es" style="centre"> <font size="5">I like Taijiquan, and I enjoy various sports in my life. I have always won gold medals in Taijiquan competitions, and I have also participated in football competitions. In the city's competitions, we have obtained good results in the third prize. Usually, I am also a person who likes playing games. In short, I am very interested in many things.</font></p >
+          <h2 style=text-align:center>Interest</h2>
+          <p class="es" style="center">I like singing, and when work and life are stressful, I will go singing with my good friends to relax and relax. I also prefer reading books and studying history.</p>
         </div>
         
         <div class="column">
-          <h2 align="center">Achievement</h2>
-          <p class="es"style="centre"> <font size="5">I love games and sports. I have designed websites for sports brands and won the first prize in website des
+          <h2 style=text-align:center>Achievement</h2>
+          <p class="es">I have helped many large companies design web pages many times. The team I once worked for won the fourth place in the National Web Design Competition.</p>
+        </div>
+        
+        <div class="column">
+          <h2 style=text-align:center>Exercise</h2>
+          <p class="es">I often play basketball with my good friends. Playing basketball not only helps me exercise my physique, but also makes my mind more flexible. My relationship with my friends is also getting better and better in playing basketball.</p>
+        </div>
+      </div>
+      <table border="1"><!--This is table-->
+        <tr>
+          <td>interest</td>
+          <td>Sing and Dance</td>
+          <td>Rap</td>
+          <td>Basketball</td>
+        </tr>
+        <tr>
+          <td>achievement</td>
+          <td>Badminton Champion</td>
+          <td>Fourth place in the National Web Design Competition</td>
+          <td>Outstanding college students</td>
+        </tr>
+        <tr>
+            <td>Favorite Books</td>
+            <td>Things about the Ming Dynasty</td>
+            <td>Five thousand years of China</td>
+            <td>Young Mao Zedong</td>
+          </tr>
+          <tr>
+            <td>Educational experience</td>
+            <td>primary school</td>
+            <td>middle school</td>
+            <td>College</td>
+          </tr>
+        </table>
+       
+                 
+<footer style=text-align:center>Page1</footer><!--This is footnote-->
+
 </body>
 </html>
